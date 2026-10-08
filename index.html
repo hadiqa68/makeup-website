@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloss bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/fvicon.png" type="image/x-icon">
+</head>
+
+<body>
+    
+    <!-- navbar -->
+    <nav class="navbar">
+        <div>Gloss bar</div>
+
+        <ul class="nav-links">
+            <li><a href="./home.html">HOME</a></li>
+            <li><a href=./about.html>ABOUT</a></li>
+            <li><a href="./menu.html">PRODUCTS</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+
+        </ul>
+    </nav>
+    </nav><br><br>
+    <!-- welcome -->
+   
+        <div class="welcome">
+            <h2>WELCOME TO Gloss Bar</h2>
+            <p>Fresh Makeup, reasonable prices and with wonderful result .</p>
+            
+        </div>
+    <br><br>
+    <!-- about us -->
+    <div class="about">
+        <h1>About us</h1>
+        <p>Gloss Bar where high-performance skincare meets effortless, glass-like glam.
+            Our curated beauty line infuses nourishing, <br>clean ingredients into
+            lightweight makeup formulas to give you a healthy, glowing look from the inside out.</p>
+    </div><br><br>
+    <!-- SIDE BAR -->
+<aside class="sidebar">
+    <h2>PRODUCTS</h2>
+
+    <a href="#lipgloss">Lip Gloss</a>
+    <a href="#lipstick">Lipstick</a>
+    <a href="#serum">Serum</a>
+    <a href="#blush">Blush</a>
+</aside>
+    <!-- PRODUCT -->
+    <form action="./buy.html">
+    <h1 class="our">OUR PRODUCTS</h1>
+    <div class="products">
+        <div class="product-card">
+            <img src="./images/lipglos.png" alt="Lip Gloss">
+            <h2>Lip Gloss</h2>
+            <p>Shiny and smooth lip gloss for a beautiful look.</p>
+            <h3>Rs. 899</h3>
+            <button>BUY NOW</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/lipstick.png" alt="Lipstick">
+            <h2>Lipstick</h2>
+            <p>Soft and beautiful lipstick in different shades.</p>
+            <h3>Rs. 999</h3>
+            <button>BUY NOW</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/serum.png" alt="Mascara">
+            <h2>Serum</h2>
+            <p>Glow your skin with our hydrating face serum for a fresh, radiant look. ✨.</p>
+            <h3>Rs. 799</h3>
+            <button>BUY NOW</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/blushon.png" alt="Blush">
+            <h2>Blush</h2>
+            <p>Beautiful blush shades for a fresh glow.</p>
+            <h3>Rs. 899</h3>
+            <button>BUY NOW</button>
+        </div><br><br>
+    </div><br><br>
+</form>
+
+    <!-- contact -->
+     <form action="./submit.html">
+    <div class="contact">
+
+        <h1>Contact Us</h1>
+
+        <p>📍 Karachi, Pakistan</p>
+        <p>📞 0300-1234567</p>
+        <p>✉️ Glossbar@gmail.com</p>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea><br>
+            <button type="submit" class="btnn">Send Message</button>
+        </form>
+    </div>
+    <!-- footer -->
+    <footer>
+        © 2026 Gloss Bar. All Rights Reserved.
+    </footer>
+    <script>
+
+function showProduct(productId) {
+
+    let products = document.querySelectorAll(".product-card");
+
+    products.forEach(function(product) {
+        product.style.display = "none";
+    });
+
+    let selectedProduct = document.getElementById(productId);
+
+    selectedProduct.style.display = "block";
+}
+
+</script>
+</body>
+</html>
